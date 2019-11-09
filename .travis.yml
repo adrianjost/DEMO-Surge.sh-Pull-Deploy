@@ -1,0 +1,10 @@
+image: minimal
+env:
+  - SURGE_SUBDOMAIN=pull_deploy_example_aj
+  - BUILD_DIR=./dist/
+script: sh ./build.sh
+# do not use the travis deploy feature
+# deploy only runs on branch builds, but we need pull builds
+after_success:
+  - npm i -g surge
+  - bash ./pull-deploy.sh
