@@ -1,4 +1,4 @@
-language: minimal
+language: generic
 env:
   global:
     - SURGE_SUBDOMAIN=pull_deploy_example_aj
@@ -7,5 +7,4 @@ script: sh ./build.sh
 # do not use the travis deploy feature
 # deploy only runs on branch builds, but we need pull builds
 after_success:
-  - npm i -g surge
   - bash ./pull-deploy.sh
