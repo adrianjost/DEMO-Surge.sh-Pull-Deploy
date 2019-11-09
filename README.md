@@ -6,7 +6,7 @@ Read the full article on Medium: https://medium.com/p/394c3977b600
 
 1. Fork the Repo
 1. Enable Travis fot this repo
-1. enable travis pull request runs for this repo
+1. enable travis pull request runs for this repo ![image](https://user-images.githubusercontent.com/22987140/68527007-7494e180-02e2-11ea-87f5-4d43b34273e8.png)
 1. set the required (secret) env variables in travis
     - `SURGE_LOGIN` (secret)
     - `SURGE_TOKEN` (secret)
