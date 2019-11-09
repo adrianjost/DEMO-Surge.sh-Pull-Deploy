@@ -1,4 +1,4 @@
-image: minimal
+language: minimal
 env:
   - SURGE_SUBDOMAIN=pull_deploy_example_aj
   - BUILD_DIR=./dist/
