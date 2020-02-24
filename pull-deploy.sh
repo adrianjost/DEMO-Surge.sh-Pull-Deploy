@@ -21,7 +21,7 @@ then
 	exit 0;
 fi
 
-surge --project ${BUILD_DIR} --domain ${TRAVIS_PULL_REQUEST}.${SURGE_SUBDOMAIN}.surge.sh
+npx surge --project ${BUILD_DIR} --domain ${TRAVIS_PULL_REQUEST}.${SURGE_SUBDOMAIN}.surge.sh
 
 
 if [ -z "$GITHUB_TOKEN" ];
